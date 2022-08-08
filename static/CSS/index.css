@@ -1,12 +1,28 @@
-textarea {
-    width: 500px;
-    height: 300px;
-    background-color: lightblue;
-    font-size: 25px;
+body {
+    margin: 0px;
+    background-color: rgb(110, 121, 129);
 }
-pre {
-    width: 500px;
-    height: 300px;
-    background-color: lightgray;
-    font-size: 25px;
+ul {
+    background-color: rgb(17, 30, 37);
+    margin: 0px;
+    list-style-type: none;
+    padding: 5px 0px;
+}
+ul li { 
+    display: inline;
+    padding: 5px 10px;
+}
+ul li a:link, ul li a:visited {
+    color: #fff;
+    border-bottom: none;
+    font-weight: bold;
+}
+ul li.selected {
+    background-color: tomato;
+}
+
+canvas {
+    background-color: #fff;
+    border: solid 1px;
+    margin: 10px;
 }
