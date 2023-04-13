@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./static/images/logo.png"> <!--标签页logo-->
+    <link rel="stylesheet" href="./static/CSS/index.css">
+
+    <link rel="stylesheet" href="../static/highlight/styles/default.min.css">
+    <script src="../static/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    
+    <title>简单的问候</title>
+</head>
+
+
+<body>
+
+<h3>Source Code</h3>
+<pre><code class="js-html">var defaultName = "Zhang";
+var name = prompt("Your name: ", defaultName);
+alert("Hello " + name + "!");
+</code>
+</pre>
+
+<h2>注意事项</h2>
+<ul>
+    <li>使用 <code>+</code> 连接字符串时，数字会被自动转化为字符串。</li>
+    <li><code>prompt</code> 的第 2 个参数是可选的。</li>
+    <li><code>prompt</code> 返回的是字符串。</li>
+    <li>若用户输入为空，则返回值为一个空的字符串。</li>
+    <li>若用户选择了“取消”，则返回值为 <code>null</code>。</li>
+</ul>
+
+
+<script>
+    var defaultName = "Zhang";
+    var name = prompt("Your name: ", defaultName);
+    alert("Hello " + name + "!");
+</script>
+</body>
