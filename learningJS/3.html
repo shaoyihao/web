@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./static/images/logo.png"> <!--标签页logo-->
+    <link rel="stylesheet" href="./static/CSS/index.css">
+
+    <link rel="stylesheet" href="../static/highlight/styles/default.min.css">
+    <script src="../static/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    
+    <title>日期2</title>
+</head>
+
+
+<body>
+
+<h3>Source Code</h3>
+<pre><code class="js-html">var birthday = new Date("May 17, 2002 18:00:00"); // 指定日期
+var today = new Date();
+var diff = Math.floor((today.getTime() - birthday.getTime()) / (1000 * 60 * 60 * 24));
+alert(diff + " days");
+</code>
+</pre>
+
+<h3>注意</h3>
+<ul>
+    <li>getTime()返回的是毫秒数。</li>
+</ul>
+
+
+<script>
+    var birthday = new Date("May 17, 2002 18:00:00");  
+    var today = new Date();
+    var diff = Math.floor((today.getTime() - birthday.getTime()) / (1000 * 60 * 60 * 24));
+    alert(diff + " days");
+</script>
+</body>
